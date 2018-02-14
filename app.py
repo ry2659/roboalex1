@@ -18,7 +18,7 @@ def webhook():
     r.headers['Content-type']='application/json'
     return r
 def makeWebhookResult(req):
-    if req.get("result").get("action")!='funddetails':
+    if req.get("result").get("action")!='sedolNumber.Action':
         return{}
     result=req.get("result")
     parameters=result.get("parameters")
